@@ -1,5 +1,5 @@
 const Events: React.FC = () => {
-  return <>Events</>;
+  return <h1>Events</h1>;
 };
 
 export default Events;
