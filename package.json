@@ -1,6 +1,7 @@
 {
   "name": "site-catel",
   "private": true,
+  "homepage": "https://ifce-catel-telematica.github.io/site-catel/",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
