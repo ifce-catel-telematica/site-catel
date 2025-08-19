@@ -59,7 +59,7 @@ Antes de começar, você precisa ter instalado em sua máquina:
 2. Clone o seu fork para a sua máquina:
 
 ```bash
-git clone https://github.com/SEU_USUARIO/site-catel.git
+git clone git@github.com:ifce-catel-telematica/site-catel.git
 cd site-catel
 ```
 
