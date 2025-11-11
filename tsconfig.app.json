@@ -21,7 +21,20 @@
     "noUnusedParameters": true,
     "erasableSyntaxOnly": true,
     "noFallthroughCasesInSwitch": true,
-    "noUncheckedSideEffectImports": true
+    "noUncheckedSideEffectImports": true,
+
+    /* Explicitamente desabilitar tipos de teste */
+    "types": ["node", "vite/client"]
   },
-  "include": ["src"]
+  "include": ["src"],
+  "exclude": [
+    "src/**/__tests__/**",
+    "src/**/*.test.*", 
+    "src/**/*.spec.*",
+    "src/**/*.stories.*",
+    "src/**/*.test-utils.*",
+    "**/*.test.*",
+    "**/*.spec.*",
+    "node_modules"
+  ]
 }

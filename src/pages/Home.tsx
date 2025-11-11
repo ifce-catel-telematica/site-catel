@@ -24,6 +24,7 @@ import {
   Announcement,
 } from "@mui/icons-material";
 import { Link } from "react-router-dom";
+import heroImage from "../../public/images/hero-image.webp";
 
 export default function Home() {
   const features = [
@@ -95,16 +96,37 @@ export default function Home() {
 
   return (
     <Box>
-      {/* Hero Section - Espaçamento reduzido */}
+      {/* Hero Image - Ocupando toda a largura */}
+      <Box
+        sx={{
+          width: "100vw",
+          height: { xs: "300px", sm: "400px", md: "600px" },
+          position: "relative",
+          left: "50%",
+          right: "50%",
+          marginLeft: "-50vw",
+          marginRight: "-50vw",
+          mb: 0,
+          backgroundImage: `url(${heroImage})`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          backgroundPositionY: "35%",
+          backgroundRepeat: "no-repeat",
+        }}
+      />
+
+      {/* Hero Content - Abaixo da imagem */}
       <Paper
         elevation={0}
         sx={{
+          marginTop: "5px",
+          marginBottom: "5px",
           background: "linear-gradient(135deg, #5c6bc0 0%, #031335 100%)",
           color: "white",
           py: { xs: 4, md: 6 },
           px: { xs: 2, sm: 4 },
           mb: 6,
-          borderRadius: 3,
+          borderRadius: 0,
           position: "relative",
           overflow: "hidden",
         }}
@@ -123,18 +145,6 @@ export default function Home() {
         <Container maxWidth="lg" sx={{ position: "relative", zIndex: 2 }}>
           <Grid container spacing={4} alignItems="center">
             <Grid size={{ xs: 12, md: 8 }}>
-              <Box mb={2}>
-                {/* <Chip
-                  label="Centro Acadêmico Oficial"
-                  sx={{
-                    backgroundColor: "rgba(255,255,255,0.2)",
-                    color: "white",
-                    mb: 3,
-                    fontWeight: "medium",
-                    backdropFilter: "blur(10px)",
-                  }}
-                /> */}
-              </Box>
               <Typography
                 variant="h2"
                 component="h1"
